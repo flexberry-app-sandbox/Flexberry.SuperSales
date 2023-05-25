@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-super-sales-sale-e",
+  "editForm": "i-i-s-super-sales-sale-e",
+  "external": false,
+  "caption": "Продажи",
+  "name": "IISSuperSalesSaleL",
+  "className": "SaleL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-super-sales-sale",
+      "modelProjection": "SaleL"
+    }
+  ]
+}

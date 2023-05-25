@@ -1,0 +1,120 @@
+﻿{
+  "name": "IISSuperSalesSale",
+  "modelName": "i-i-s-super-sales-sale",
+  "className": "Sale",
+  "nameSpace": "IIS.SuperSales",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "saleDate",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "client",
+      "relatedTo": "i-i-s-super-sales-client",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "saleItem",
+      "relatedTo": "i-i-s-super-sales-sale-item",
+      "inverse": "sale"
+    }
+  ],
+  "projections": [
+    {
+      "name": "SaleE",
+      "modelName": "i-i-s-super-sales-sale",
+      "attrs": [
+        {
+          "name": "saleDate",
+          "caption": "Дата продажи",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "Client",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Клиент",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Клиент",
+          "name": "client",
+          "relatedTo": "i-i-s-super-sales-client",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "SaleItemE",
+          "caption": "Товарная позиция",
+          "name": "saleItem",
+          "relatedTo": "i-i-s-super-sales-sale-item",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "SaleL",
+      "modelName": "i-i-s-super-sales-sale",
+      "attrs": [
+        {
+          "name": "saleDate",
+          "caption": "Дата продажи",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Client",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Клиент",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Клиент",
+          "name": "client",
+          "relatedTo": "i-i-s-super-sales-client",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

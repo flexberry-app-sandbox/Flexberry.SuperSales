@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-super-sales-client-e",
+  "editForm": "i-i-s-super-sales-client-e",
+  "external": false,
+  "caption": "Клиенты",
+  "name": "IISSuperSalesClientL",
+  "className": "ClientL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-super-sales-client",
+      "modelProjection": "ClientL"
+    }
+  ]
+}

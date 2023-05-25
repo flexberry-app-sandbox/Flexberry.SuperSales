@@ -1,0 +1,44 @@
+﻿{
+  "applicationCaption": "Super sales",
+  "applicationTitle": "Super sales",
+  "items": [
+    {
+      "link": null,
+      "menuName": "супер-продажи",
+      "caption": "Супер продажи",
+      "title": "Супер продажи",
+      "children": [
+        {
+          "link": "i-i-s-super-sales-sale-l",
+          "menuName": null,
+          "caption": "Продажи",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": null,
+          "menuName": "справочники",
+          "caption": "Справочники",
+          "title": "Справочники",
+          "children": [
+            {
+              "link": "i-i-s-super-sales-client-l",
+              "menuName": null,
+              "caption": "Клиенты",
+              "title": "Client",
+              "children": null
+            },
+            {
+              "link": "i-i-s-super-sales-product-l",
+              "menuName": null,
+              "caption": "Товары",
+              "title": "Product",
+              "children": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}
